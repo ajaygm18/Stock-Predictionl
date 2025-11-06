@@ -58,7 +58,8 @@ def run_notebook_test(notebook_path):
 def main():
     """Main function to test notebook execution."""
     
-    base_path = Path('/home/runner/work/Stock-Predictionl/Stock-Predictionl')
+    # Use the directory containing this script as the base path
+    base_path = Path(__file__).parent.resolve()
     
     # Test a simple notebook from each section
     test_notebooks = [

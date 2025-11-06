@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
+import os
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -96,8 +97,8 @@ def main():
         ax.grid(True, alpha=0.3)
         plt.tight_layout()
         
-        # Save the plot
-        output_file = '/home/runner/work/Stock-Predictionl/Stock-Predictionl/demo_output.png'
+        # Save the plot in the current directory
+        output_file = os.path.join(os.path.dirname(__file__), 'demo_output.png')
         plt.savefig(output_file, dpi=100, bbox_inches='tight')
         print(f"✓ Successfully created visualization")
         print(f"  Saved to: {output_file}")
