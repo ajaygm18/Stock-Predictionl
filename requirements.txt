@@ -1,0 +1,40 @@
+# Core data science libraries
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+plotly
+
+# Financial data
+yfinance
+mplfinance
+
+# Machine learning
+scikit-learn
+
+# Deep learning
+tensorflow
+keras>=3.12.0
+
+# Time series analysis
+statsmodels
+prophet
+
+# Web scraping
+beautifulsoup4
+selenium
+
+# Natural language processing
+nltk
+textblob
+spacy
+gensim
+
+# Transformers and BERT
+transformers>=4.48.0
+torch>=2.6.0
+
+# Jupyter
+jupyter
+ipykernel
